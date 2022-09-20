@@ -1,12 +1,12 @@
 <div class="face-snap-card">
-  <img [src]="urlPhoto" [alt]="title">
+  <img [src]="faceSnap.urlPhoto" [alt]="faceSnap.title">
   <div class="right-description">
-    <h2> {{ title }} </h2>
-    <p> {{ description }} </p>
-    <p> Published : {{ createdDate }} </p>
+    <h2> {{ faceSnap.title }} </h2>
+    <p> {{ faceSnap.description }} </p>
+    <p> Published : {{ faceSnap.createdDate }} </p>
     <div class="button-like">
       <button (click)="onLike()"> {{ buttonText }} </button>
-      <p>👍{{ likes }}</p>
+      <p>👍{{ faceSnap.likes }}</p>
     </div>
   </div>
 </div>
