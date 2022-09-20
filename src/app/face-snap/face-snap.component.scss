@@ -1,0 +1,42 @@
+.face-snap-card {
+
+  width: 50%;
+  height: 300px;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  .right-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    padding: 16px;
+
+    h2 {
+      margin-bottom: 32px;
+    }
+
+    .button-like {
+      display: flex;
+      align-items: center;
+
+      button {
+        padding: 0px 16px;
+        height: 30px;
+        margin-right: 16px;
+        // align-content: center;
+      }
+    }
+
+}
+
+  img {
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+  }
+}
