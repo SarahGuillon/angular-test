@@ -1,12 +1,13 @@
-<div class="face-snap-card">
+<div class="face-snap-card" [ngClass]="{'green-card': buttonText === 'Like'}">
   <img [src]="faceSnap.urlPhoto" [alt]="faceSnap.title">
   <div class="right-description">
     <h2> {{ faceSnap.title }} </h2>
     <p> {{ faceSnap.description }} </p>
+    <p *ngIf="faceSnap.location"> Photo taken at {{ faceSnap.location }} </p>
     <p> Published : {{ faceSnap.createdDate }} </p>
     <div class="button-like">
       <button (click)="onLike()"> {{ buttonText }} </button>
-      <p>👍{{ faceSnap.likes }}</p>
+      <p [ngStyle]= "{ color: 'rgb(0, '+ faceSnap.likes * 20 + ', 0'}">👍{{ faceSnap.likes }}</p>
     </div>
   </div>
 </div>

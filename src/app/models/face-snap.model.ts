@@ -1,3 +1,5 @@
+// Syntaxe du Model : contient toutes les propriétés necéssaires au composant + propriétés à passer dans constructor
+
 // export class FaceSnap {
 //   title!: string;
 //   description!: string;
@@ -14,12 +16,25 @@
 //   }
 // }
 
+// On peut ecrire également de cette manière (raccourci) :
+
+// export class FaceSnap {
+//   constructor(
+//     public title: string,
+//     public description: string,
+//     public urlPhoto: string,
+//     public createdDate: string,
+//     public likes: number) {
+//   }
+// }
+
+// Si trop d'argument dans constructor, on ne l'utilise pas:
+
 export class FaceSnap {
-  constructor(
-    public title: string,
-    public description: string,
-    public urlPhoto: string,
-    public createdDate: string,
-    public likes: number) {
+    title!: string;
+    description!: string;
+    createdDate!: string;
+    likes!: number;
+    urlPhoto!: string;
+    location?: string;
   }
-}
