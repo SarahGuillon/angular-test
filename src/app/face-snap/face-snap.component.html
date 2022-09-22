@@ -1,7 +1,7 @@
 <div class="face-snap-card" [ngClass]="{'green-card': buttonText === 'Like'}">
   <img [src]="faceSnap.urlPhoto" [alt]="faceSnap.title">
   <div class="right-description">
-    <h2> {{ faceSnap.title }} </h2>
+    <h2> {{ faceSnap.title | uppercase }} </h2>
     <p> {{ faceSnap.description }} </p>
     <p *ngIf="faceSnap.location"> Photo taken at {{ faceSnap.location }} </p>
     <p> Published : {{ faceSnap.createdDate }} </p>

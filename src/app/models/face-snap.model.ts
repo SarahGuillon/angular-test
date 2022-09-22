@@ -31,6 +31,7 @@
 // Si trop d'argument dans constructor, on ne l'utilise pas:
 
 export class FaceSnap {
+    id!: number;
     title!: string;
     description!: string;
     createdDate!: string;
