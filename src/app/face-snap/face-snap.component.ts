@@ -10,11 +10,11 @@ import { FaceSnapsService } from '../services/face-snaps.service';
 export class FaceSnapComponent implements OnInit  {
   @Input() faceSnap!: FaceSnap;
   buttonText!: string;
-  // title!: string;
-  // description!: string;
-  // createdDate!: string;
-  // likes!: number;
-  // urlPhoto!: string;
+  /* title!: string;
+  description!: string;
+  createdDate!: string;
+  likes!: number;
+  urlPhoto!: string;  */
 
   constructor(private faceSnapService: FaceSnapsService) {}
 
